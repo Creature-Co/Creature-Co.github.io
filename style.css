@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Raleway:wght@500;800;900&display=swap");
+
+:root {
+  --main-color: #1d1d1d;
+  --secondary-color: #f26f53;
+  -webkit-font-smoothing: antialiased;
+  color: #1d1d1d;
+  font-family: "Lora", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body {
+  height: 100%;
+  line-height: 1.5;
+  position: relative;
+  overflow-x: hidden;
+}
+
+a {
+  font: inherit;
+  color: inherit;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+}
+
+h2 strong {
+  color: var(--secondary-color);
+}
+
+.subheader {
+  font-size: 20px;
+}
+
+header {
+  margin: 30px;
+}
+
+header .logo {
+  height: 32px;
+}
+
+header nav {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  top: -6px;
+  left: 1em;
+}
+
+header * {
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.page.home {
+  background: url("/images/home-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  position: relative;
+  width: 100%;
+  mix-blend-mode: multiply; /* Fixes render issues with ballon */
+}
+
+.page.home .balloon {
+  width: 50%;
+  min-width: 270px;
+  max-width: 470px;
+  mix-blend-mode: darken;
+  position: absolute;
+  right: -90px;
+  top: -180px;
+  animation-name: balloon;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+@keyframes balloon {
+  0% {
+    top: -200px;
+  }
+  50% {
+    top: -210px;
+  }
+  100% {
+    top: -200px;
+  }
+}
+
+.page.home .main {
+  text-align: center;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  width: 100%;
+}
+
+.page.home h2 {
+  margin-bottom: 0.3em;
+}
+
+.page.home h2 strong {
+  white-space: no-break;
+  display: inline-block;
+}
+
+.page.home h2,
+.page.home h2 * {
+  line-height: 1;
+}
+
+.page.home footer {
+  text-align: center;
+  width: 100%;
+  padding: 0 10%;
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  font-family: Raleway, sans-serif;
+  font-size: 13px;
+}
