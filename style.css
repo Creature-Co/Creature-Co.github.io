@@ -4,8 +4,6 @@
   --main-color: #1d1d1d;
   --secondary-color: #f26f53;
   -webkit-font-smoothing: antialiased;
-  color: #1d1d1d;
-  font-family: "Lora", serif;
 }
 
 * {
@@ -20,6 +18,8 @@ html {
   height: 100%;
   overflow-x: hidden;
   position: relative;
+  color: #1d1d1d;
+  font-family: "Lora", serif;
 }
 
 body {
@@ -48,7 +48,10 @@ h2 strong {
 }
 
 header {
-  margin: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
 }
 
 header .logo {
@@ -70,17 +73,18 @@ header * {
   text-decoration: none;
 }
 
-.page.home {
+#home {
   background: url("/images/home-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
   position: relative;
   width: 100%;
+  min-height: 100%;
   mix-blend-mode: multiply; /* Fixes render issues with ballon */
 }
 
-.page.home .balloon {
+#home .balloon {
   width: 50%;
   min-width: 270px;
   max-width: 470px;
@@ -107,7 +111,7 @@ header * {
   }
 }
 
-.page.home .main {
+#home main {
   text-align: center;
   padding: 0 20px;
   position: absolute;
@@ -117,21 +121,21 @@ header * {
   width: 100%;
 }
 
-.page.home h2 {
+#home h2 {
   margin-bottom: 0.3em;
 }
 
-.page.home h2 strong {
+#home h2 strong {
   white-space: no-break;
   display: inline-block;
 }
 
-.page.home h2,
-.page.home h2 * {
+#home h2,
+#home h2 * {
   line-height: 1;
 }
 
-.page.home footer {
+#home footer {
   text-align: center;
   width: 100%;
   padding: 0 10%;

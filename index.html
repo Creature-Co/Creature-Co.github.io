@@ -1,53 +1,26 @@
-<!-- This is a static file -->
-<!-- served from your routes in server.js -->
-<!DOCTYPE html>
-<html class="page home" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Creature & Co: strategists, solvers, makers extraordinaire."
-    />
-
-    <title>Creature & Co. | Strategists, Solvers, Makers Extraordinaire</title>
-
-    <link
-      id="favicon"
-      rel="icon"
-      href="/images/favicon.svg"
-      type="image/svg+xml"
-    />
-
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>
-        <img class="logo" src="/images/logo.svg" alt="Creature & Co." />
-      </h1>
-    </header>
-    <img class="balloon" src="/images/balloon.jpg" alt="" />
-    <section class="main">
-      <h2>Why hello! We are <strong>Creature & Co.</strong></h2>
-      <p class="subheader">
-        Strategists, solvers, makers extraordinaire.
-      </p>
-    </section>
-    <footer>
-      <p>
-        <script>
-          (function () {
-            const AT = "&#64;";
-            document.write(`
-              Creature & Co. is in launch mode. In the meantime, feel free to contact
-              us at hello${AT}creature.works.
-            `);
-          })();
-        </script>
-      </p>
-    </footer>
-  </body>
-</html>
+---
+layout: default
+title: Home
+---
+<div id="home">
+  <img class="balloon" src="/images/balloon.jpg" alt="" />
+  <main>
+    <h2>Why hello! We are <strong>Creature & Co.</strong></h2>
+    <p class="subheader">
+      Strategists, solvers, makers extraordinaire.
+    </p>
+  </main>
+  <footer>
+    <p>
+      <script>
+        (function () {
+          const AT = "&#64;";
+          document.write(`
+          Creature & Co. is in launch mode. In the meantime, feel free to contact
+          us at hello${AT}creature.works.
+        `);
+        })();
+      </script>
+    </p>
+  </footer>
+</div>
