@@ -3,7 +3,9 @@
 :root {
   --main-color: #1d1d1d;
   --secondary-color: #f26f53;
-  -webkit-font-smoothing: antialiased;
+  --copy-font: "Lora", serif;
+  --header-font: "Raleway", sans-serif;
+  --caption-font: "Raleway", sans-serif;
 }
 
 * {
@@ -19,7 +21,9 @@ html {
   overflow-x: hidden;
   position: relative;
   color: #1d1d1d;
-  font-family: "Lora", serif;
+  font-family: var(--copy-font);
+  background-color: #fefff0;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -34,9 +38,17 @@ a {
   color: inherit;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2em 0 1em 0;
+  font-family: var(--header-font);
+}
+
 h2 {
   font-size: 36px;
-  font-family: "Raleway", sans-serif;
 }
 
 h2 strong {
@@ -144,4 +156,27 @@ header * {
   left: 0;
   font-family: Raleway, sans-serif;
   font-size: 13px;
+}
+
+.post {
+  padding: 0 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+.post p {
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.post h2 {
+  color: var(--secondary-color);
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+.post .meta {
+  font-style: italic;
+  font-family: --var(--caption-font);
 }
