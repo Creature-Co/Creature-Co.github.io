@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Raleway:wght@500;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,200;0,400;0,700;1,400&family=FilsonPro:wght@500;700;800;900&display=swap");
 
 :root {
   --main-color: #1d1d1d;
-  --secondary-color: #f26f53;
+  --secondary-color: #444444;
   --copy-font: "Lora", serif;
-  --header-font: "Raleway", sans-serif;
-  --caption-font: "Raleway", sans-serif;
+  --header-font: "Helvetica Neue", sans-serif;
+  --caption-font: "Helvetica Neue", sans-serif;
 }
 
 * {
@@ -45,18 +45,25 @@ h5,
 h6 {
   margin: 2em 0 1em 0;
   font-family: var(--header-font);
+  letter-spacing: -0.0125em;
 }
 
 h2 {
   font-size: 36px;
+  font-weight: 500;
 }
 
 h2 strong {
-  color: var(--secondary-color);
+  font-weight: 800;
 }
 
 .subheader {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.subheader a {
+  text-decoration: none;
+  color: rgb(2, 77, 170);
 }
 
 header {
@@ -71,7 +78,7 @@ header .logo {
 }
 
 header nav {
-  font-family: Raleway;
+  font-family: FilsonPro;
   font-weight: 500;
   font-size: 15px;
   position: relative;
@@ -154,7 +161,6 @@ header * {
   position: fixed;
   bottom: 30px;
   left: 0;
-  font-family: Raleway, sans-serif;
   font-size: 13px;
 }
 

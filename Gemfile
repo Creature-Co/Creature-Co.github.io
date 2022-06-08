@@ -1,3 +1,3 @@
 source 'https://rubygems.org' do
-  gem 'jekyll', '~>4.0'
+  gem 'jekyll', '~>4.2'
 end
